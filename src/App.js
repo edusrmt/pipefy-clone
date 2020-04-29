@@ -5,12 +5,16 @@ import HTML5Backend from 'react-dnd-html5-backend';
 import GlobalStyle from './styles/global';
 import Header from './components/Header';
 import Board from './components/Board';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <DndProvider backend={HTML5Backend}>
-      <Header />
-      <Board />
+      <Sidebar />
+      <div id="main">
+        <Header />
+        <Board />
+      </div>
       <GlobalStyle />
     </DndProvider>
   );

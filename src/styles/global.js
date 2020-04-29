@@ -14,8 +14,12 @@ export default createGlobalStyle`
     height: 100%
   }
 
+  #main {
+    margin-left: 56px;
+  }
+
   body {
-    font: 14px, 'Roboto', sans-serif;
+    font: 14px 'Roboto', sans-serif;
     background-color: #ecf1f8;
     color: #333;
     -webkit-font-smoothing: antialiased !important;
